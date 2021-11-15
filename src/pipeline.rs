@@ -307,6 +307,7 @@ fn build<D>(
         },
         primitive: wgpu::PrimitiveState {
             topology: wgpu::PrimitiveTopology::TriangleStrip,
+            strip_index_format: Some(wgpu::IndexFormat::Uint16),
             front_face: wgpu::FrontFace::Cw,
             ..Default::default()
         },
